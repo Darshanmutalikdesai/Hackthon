@@ -1,0 +1,15 @@
+.heatmapShell {
+  position: relative;
+}
+
+.heatmapGrid {
+  position: relative;
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+}

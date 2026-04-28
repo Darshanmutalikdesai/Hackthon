@@ -1,0 +1,75 @@
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.link,
+.activeLink,
+.footerLink {
+  text-decoration: none;
+  color: #cbd5e1;
+  border: 1px solid transparent;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: background 0.16s ease;
+}
+
+.link:hover,
+.footerLink:hover,
+.activeLink:hover {
+  background: rgba(148, 163, 184, 0.14);
+}
+
+.activeLink {
+  background: rgba(59, 130, 246, 0.16);
+  color: #e2e8f0;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: #94a3b8;
+}
+
+@media (min-width: 720px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

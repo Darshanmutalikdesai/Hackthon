@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set JWT Token</title>
+</head>
+<body>
+    <h1>JWT Token Setup</h1>
+    <p>Click the button below to set the JWT token for the trading app:</p>
+    <button onclick="setToken()">Set JWT Token</button>
+    <p id="status"></p>
+
+    <script>
+        function setToken() {
+            const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNDEyZjIzNi00ZWRjLTQ3YTItOGY1NC04NzYzYTZlZDJjZTgiLCJpYXQiOjE3NzcyODgwOTQsImV4cCI6MTc3NzM3NDQ5NCwicm9sZSI6InRyYWRlciIsIm5hbWUiOiJBbGV4IE1lcmNlciJ9.jaocuOfDvZXcpNHI9_jnFQ4ezJCuxlAk9TsWD0YiOEk';
+            localStorage.setItem('jwt', token);
+            document.getElementById('status').textContent = '✅ JWT token set successfully! You can now close this page and refresh the trading app.';
+            document.getElementById('status').style.color = 'green';
+        }
+    </script>
+</body>
+</html>
