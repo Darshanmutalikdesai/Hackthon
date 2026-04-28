@@ -3,7 +3,7 @@ import { validateTenancy, isTokenExpired } from '../utils/auth';
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL ||
-  (import.meta.env.DEV ? 'http://localhost:4010' : 'https://api.nevup.dev/v1');
+  (import.meta.env.DEV ? 'http://localhost:4010' : '/api');
 
 function getAuthToken() {
   return localStorage.getItem('jwt') || '';

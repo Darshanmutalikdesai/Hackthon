@@ -29,15 +29,11 @@ A React-based trading behavioral analysis platform built for the NevUp Hackathon
 
 ## 🌍 Vercel Deployment
 
-The frontend is Vercel-ready as a Vite app, but you must provide the API base URL in production.
+The repo includes Vercel serverless API routes under `/api`, so the frontend can talk to the backend on the same deployment.
 
-Set this environment variable in Vercel:
+No extra API host is required in production. The app will use `/api` on Vercel and `http://localhost:4010` in local development.
 
-```bash
-VITE_API_BASE_URL=https://your-api-domain.example
-```
-
-If you are using the local mock API, deploy that separately and point this variable to it. The app also includes a SPA rewrite in `vercel.json` so React Router refreshes work on Vercel.
+The `vercel.json` file keeps React Router refreshes working on direct page loads.
 
 ## ✨ Features
 
