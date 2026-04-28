@@ -12,12 +12,12 @@
   gap: 16px;
   padding: 18px;
   border-radius: 28px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
+  border: 1px solid rgba(46, 196, 199, 0.2);
   background:
-    linear-gradient(180deg, rgba(53, 102, 214, 0.95), rgba(20, 45, 122, 0.96)),
-    #1e3a8a;
-  color: #eff6ff;
-  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+    linear-gradient(180deg, rgba(200, 90, 214, 0.85), rgba(46, 196, 199, 0.80)),
+    #1E1E1E;
+  color: #E6E6E6;
+  box-shadow: 0 24px 70px rgba(46, 196, 199, 0.15);
 }
 
 .profileHeader {
@@ -33,15 +33,15 @@
   display: grid;
   place-items: center;
   border-radius: 999px;
-  border: 5px solid rgba(255, 255, 255, 0.18);
+  border: 5px solid rgba(46, 196, 199, 0.4);
   background:
-    radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.12) 52%, rgba(15, 23, 42, 0.1) 53%),
-    linear-gradient(145deg, #eff6ff, #bfdbfe 55%, #60a5fa);
-  color: #0f172a;
+    radial-gradient(circle at 30% 28%, rgba(230, 227, 74, 0.9), rgba(46, 196, 199, 0.3) 52%, rgba(200, 90, 214, 0.2) 53%),
+    linear-gradient(145deg, #E6E34A, #2EC4C7 55%, #C85AD6);
+  color: #1E1E1E;
   font-size: 1.9rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.25);
+  box-shadow: 0 16px 36px rgba(46, 196, 199, 0.35);
 }
 
 .profileTitle {
@@ -52,7 +52,7 @@
 
 .profileSubtitle {
   margin: 4px 0 0;
-  color: rgba(239, 246, 255, 0.78);
+  color: rgba(230, 230, 230, 0.85);
   font-size: 0.92rem;
 }
 
@@ -66,9 +66,9 @@
 .pill {
   padding: 8px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.1);
-  color: #eff6ff;
+  border: 1px solid rgba(46, 196, 199, 0.3);
+  background: rgba(46, 196, 199, 0.12);
+  color: #E6E6E6;
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -76,14 +76,14 @@
 .sidebarPanel {
   padding: 14px;
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(8, 15, 32, 0.18);
+  border: 1px solid rgba(46, 196, 199, 0.15);
+  background: rgba(30, 30, 30, 0.3);
   backdrop-filter: blur(12px);
 }
 
 .sidebarLabel {
   margin: 0;
-  color: rgba(239, 246, 255, 0.72);
+  color: rgba(230, 230, 230, 0.75);
   font-size: 0.74rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -104,13 +104,13 @@
 .kpiCard {
   padding: 12px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(46, 196, 199, 0.08);
+  border: 1px solid rgba(46, 196, 199, 0.2);
 }
 
 .kpiLabel {
   margin: 0;
-  color: rgba(239, 246, 255, 0.72);
+  color: rgba(230, 230, 230, 0.75);
   font-size: 0.76rem;
 }
 
@@ -127,9 +127,9 @@
 
 .sidebarButton {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.1);
-  color: #eff6ff;
+  border: 1px solid rgba(46, 196, 199, 0.2);
+  background: rgba(46, 196, 199, 0.12);
+  color: #E6E6E6;
   border-radius: 16px;
   padding: 12px 14px;
   cursor: pointer;
@@ -140,8 +140,8 @@
 
 .sidebarButton:hover {
   transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(46, 196, 199, 0.2);
+  border-color: rgba(46, 196, 199, 0.4);
 }
 
 .sidebarButtonSecondary {
