@@ -215,6 +215,9 @@ paths:
         ```
       operationId: streamCoaching
       tags: [Sessions]
+      security:
+        - BearerAuth: []
+        - TokenParam: []
       parameters:
         - name: sessionId
           in: path
@@ -222,6 +225,12 @@ paths:
           schema:
             type: string
             format: uuid
+        - name: token
+          in: query
+          required: false
+          schema:
+            type: string
+          description: JWT token (alternative auth method for development)
       responses:
         '200':
           description: SSE stream of coaching tokens
@@ -354,6 +363,11 @@ components:
         JWT issued at login. See jwt_format.md for the canonical token structure.
         Every endpoint enforces row-level tenancy — the userId in the JWT must
         match the data being accessed. Cross-tenant reads return HTTP 403.
+    TokenParam:
+      type: apiKey
+      in: query
+      name: token
+      description: JWT token passed as query parameter (for development/SSE compatibility)
 
   schemas:
 

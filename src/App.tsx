@@ -46,7 +46,7 @@ function App() {
         </Link>
         <span>© 2026 Trading Behavior Platform</span>
       </footer>
-    </div>
+      </div>
   );
 }
 

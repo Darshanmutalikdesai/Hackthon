@@ -40,7 +40,8 @@ function Heatmap({ scores, onDayClick }: HeatmapProps) {
   return (
     <div className={styles.heatmapShell} ref={wrapperRef}>
       <h2 className={styles.sectionTitle}>90-Day Heatmap</h2>
-      <div className={styles.heatmapGrid}>
+      <div className={styles.heatmapViewport}>
+        <div className={styles.heatmapGrid}>
         <svg width={(cellSize + cellGap) * columns} height={(cellSize + cellGap) * rows}>
           {cells.map((item, index) => {
             const x = (index % columns) * (cellSize + cellGap);
@@ -93,6 +94,7 @@ function Heatmap({ scores, onDayClick }: HeatmapProps) {
             description={`${hovered.content.date || 'Unknown date'} • ${Math.round((hovered.content.score || 0) * 100)}%`}
           />
         )}
+        </div>
       </div>
     </div>
   );

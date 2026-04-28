@@ -1,5 +1,12 @@
 .heatmapShell {
   position: relative;
+  width: 100%;
+}
+
+.heatmapViewport {
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 6px;
 }
 
 .heatmapGrid {

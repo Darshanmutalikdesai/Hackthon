@@ -2,8 +2,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  gap: 24px;
+  gap: 22px;
+  padding: 20px;
+  width: min(1680px, calc(100% - 12px));
+  margin: 0 auto;
 }
 
 .header {
