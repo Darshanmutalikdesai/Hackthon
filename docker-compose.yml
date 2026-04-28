@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - mock-api
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
+
+  mock-api:
+    image: node:18-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "4010:4010"
+    command: sh -c "npm install -g @stoplight/prism-cli && prism mock nevup_openapi.yaml --port 4010"
