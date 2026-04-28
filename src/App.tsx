@@ -5,15 +5,12 @@ import DebriefPage from './pages/DebriefPage';
 import NotFoundPage from './pages/NotFoundPage';
 import styles from './styles/App.module.css';
 
+const DEMO_JWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNDEyZjIzNi00ZWRjLTQ3YTItOGY1NC04NzYzYTZlZDJjZTgiLCJpYXQiOjE3NzcyODgwOTQsImV4cCI6MTc3NzM3NDQ5NCwicm9sZSI6InRyYWRlciIsIm5hbWUiOiJBbGV4IE1lcmNlciJ9.jaocuOfDvZXcpNHI9_jnFQ4ezJCuxlAk9TsWD0YiOEk';
+
 function App() {
-  // Auto-set JWT token for development
-  useEffect(() => {
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNDEyZjIzNi00ZWRjLTQ3YTItOGY1NC04NzYzYTZlZDJjZTgiLCJpYXQiOjE3NzcyODgwOTQsImV4cCI6MTc3NzM3NDQ5NCwicm9sZSI6InRyYWRlciIsIm5hbWUiOiJBbGV4IE1lcmNlciJ9.jaocuOfDvZXcpNHI9_jnFQ4ezJCuxlAk9TsWD0YiOEk';
-    if (!localStorage.getItem('jwt')) {
-      localStorage.setItem('jwt', token);
-      console.log('JWT token set automatically for development');
-    }
-  }, []);
+  if (typeof window !== 'undefined' && !localStorage.getItem('jwt')) {
+    localStorage.setItem('jwt', DEMO_JWT);
+  }
 
   return (
     <div className={styles.appShell}>
